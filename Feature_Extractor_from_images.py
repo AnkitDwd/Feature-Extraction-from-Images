@@ -3,6 +3,7 @@
 # -*- coding: utf-8 -*-
 
 #Author - Ankit Dwivedi
+#M.Sc. Big Data Analytics
 
 import datetime as dt
 start_time = dt.datetime.now()
@@ -16,16 +17,12 @@ from keras.layers import Dense
 from keras.layers import Dropout
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D
-#%%
+
 '''Below is a function named extract_features() that, given a directory name,
-will load each photo, prepare it for VGG, and collect the predicted features
-from the VGG model. The image features are a 1-dimensional 4,096 element vector'''
+will load each photo,and outputs a dict with key as image name and value as 1-dimensional 4,096 element vector'''
 
-
-#%%
 # extract features from each photo in the directory
 def extract_features(directory):
-	# load the model
 	# load the model
    model = Sequential()
    # input: 224x224 images with 3 channels -> (224, 224, 3) tensors.
