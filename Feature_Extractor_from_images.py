@@ -3,7 +3,6 @@
 # -*- coding: utf-8 -*-
 
 #Author - Ankit Dwivedi
-#M.Sc. Big Data Analytics
 
 import datetime as dt
 start_time = dt.datetime.now()
